@@ -2,3 +2,11 @@ language: php
 php:
     - 7.2
     - 7.3
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 385845fcce21d428b77fa6261e4c64bd5f53a44a  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
+    
